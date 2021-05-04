@@ -11,6 +11,10 @@ function print(text) {
  */
 function isValid(name) {
   // ваш код...
+  let space = function (str) {
+    return str.indexOf(' ') === -1;
+  }
+  return name === null || name == '' || name.length < 4 || !space(name) ? false : true;
 }
 
 function sayHello() {

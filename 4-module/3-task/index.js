@@ -1,5 +1,6 @@
 function highlight(table) {
   // ваш код...
+
   let tr = document.querySelectorAll('tbody tr');
 
   for (let i = 0; i < tr.length; i++) { 
@@ -22,4 +23,5 @@ function highlight(table) {
     }
   }
   return table;
+
 }

@@ -2,6 +2,7 @@ function makeDiagonalRed(table) {
   // ваш код...
   let tr = table.rows;
   let td = table.rows[0].cells.length;
+  console.log(tr);
   let res;
   for (let i = 0; i < td; i++){
     let tr2 = tr[i];

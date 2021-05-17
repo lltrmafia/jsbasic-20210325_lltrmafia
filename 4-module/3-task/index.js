@@ -1,7 +1,7 @@
 function highlight(table) {
   // ваш код...
 
-  let tr = document.querySelectorAll('tbody tr');
+  let tr = table.querySelectorAll('tbody tr');
 
   for (let i = 0; i < tr.length; i++) { 
     let sum = tr[0].cells.length - 1;
@@ -22,6 +22,5 @@ function highlight(table) {
       tr2.cells[sum - 2].parentElement.style.textDecoration = 'line-through';
     }
   }
-  return table;
 
 }

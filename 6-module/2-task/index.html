@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Бангкок Экспресс: Карточка товара</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="/assets/styles/common.css" />
+</head>
+
+<body>
+  <div id="holder" class="container_half"></div>
+
+  <script type="module">
+
+    import ProductCard from './index.js';
+
+  let product = {
+  name: "Laab kai chicken salad",
+  price: 10,
+  category: "salads",
+  image: "laab_kai_chicken_salad.png",
+  id: "laab-kai-chicken-salad"
+}
+
+const productCard = new ProductCard(product);
+holder.append(productCard.render());
+productCard.elem.addEventListener('product-add', ev =>{
+  console.log(ev.detail);
+});
+console.log(productCard.elem);
+  
+</script>
+
+</body>
+
+</html>
